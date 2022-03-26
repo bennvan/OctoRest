@@ -23,7 +23,7 @@ class OctoRest:
     Encapsulates communication with one OctoPrint instance
     """
 
-    def __init__(self, *, url=None, apikey=None, session=None):
+    def __init__(self, *, url=None, apikey=None, session=None, timeout=3):
         """
         Initialize the object with URL and API key
 
@@ -41,6 +41,8 @@ class OctoRest:
         self.url = '{}://{}'.format(parsed.scheme, parsed.netloc)
 
         self.session = session or requests.Session()
+
+        self.timeout = timeout
         
         if apikey:
             self.load_api_key(apikey)
@@ -73,7 +75,7 @@ class OctoRest:
         Returns JSON decoded data
         """
         url = urlparse.urljoin(self.url, path)
-        response = self.session.get(url, params=params)
+        response = self.session.get(url, params=params, timeout=self.timeout)
         self._check_response(response)
 
         return response.json()
