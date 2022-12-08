@@ -7,7 +7,7 @@ betamax==0.8.1
 betamax-serializers==0.2.1
 blinker==1.4
 cachelib==0.1
-certifi==2019.11.28
+certifi==2022.12.7
 chardet==3.0.4
 Click==7.0
 emoji==0.5.4
