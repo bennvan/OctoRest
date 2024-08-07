@@ -2,12 +2,12 @@ appdirs==1.4.3
 argh==0.26.2
 attrs==19.3.0
 awesome-slugify==1.6.5
-Babel==2.7.0
+Babel==2.9.1
 betamax==0.8.1
 betamax-serializers==0.2.1
 blinker==1.4
 cachelib==0.1
-certifi==2019.11.28
+certifi==2022.12.7
 chardet==3.0.4
 Click==7.0
 emoji==0.5.4
@@ -28,7 +28,7 @@ MarkupSafe==1.1.1
 more-itertools==8.0.2
 netaddr==0.7.19
 netifaces==0.10.9
-OctoPrint==1.4.0rc3
+OctoPrint==1.8.3
 -e git+git@github.com:dougbrion/octorest.git@510b84dbc4ede1c8bbc92239e04a5c7299f1f96c#egg=octorest
 packaging==19.2
 pathtools==0.1.2
@@ -57,6 +57,6 @@ watchdog==0.9.0
 wcwidth==0.1.7
 webassets==0.12.1
 websocket-client==0.56.0
-Werkzeug==0.16.0
+Werkzeug==2.2.3
 wrapt==1.11.2
 zipp==0.6.0

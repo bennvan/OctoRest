@@ -525,7 +525,7 @@ class OctoRest:
         data = {
             'foldername': folder_name,
         }
-        return self._post('/api/files/{}'.format(location), json=data)
+        return self._post('/api/files/{}'.format(location), data=data)
 
     def select(self, location, *, print=False):
         """Issue a file command
